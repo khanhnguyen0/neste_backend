@@ -1,0 +1,32 @@
+const mongoose  = require('mongoose');
+
+const supplierSchema = mongoose.Schema({
+   "code": {type:String},
+   "supplier_name": {type:String},
+   "feedstock_type": {type:String},
+   "company_name": {type:String},
+   "country": {type:String},
+   "province": {type:String},
+   "contract_date": {type:String},
+   "certification_no": {type:Number},
+   "certification_name": {type:String},
+   "capacity": {type:Number},
+   "volume": {type:Number},
+   "no_estate": {type:Number},
+   "sustainability_commitment": {type:Number},
+   "traceability_logistics": {type:Number},
+   "stakeholder_engagement": {type:Number},
+   "social_resp": {type:Number},
+   "environment": {type:Number},
+   "GHG": {type:String},
+   "expired_certification_no": {type:Number},
+   "rank": {type:Number},
+   "quality_rate": {type:Number},
+   "Traceability": {type:Number},
+   "ontime_delivery": {type:Number},
+   "updated_document": {type:Number},
+   "current_GHG": {type:String}
+})
+
+
+module.exports  = mongoose.model('Supplier', supplierSchema);
