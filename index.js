@@ -95,7 +95,12 @@ app.post('/supplier/new',(req,res)=>{
     "traceability": req.body.supplier.traceability,
     "ontime_delivery": req.body.supplier.ontime_delivery,
     "updated_document": req.body.supplier.updated_document,
-    "current_GHG": req.body.supplier.current_GHG
+    "current_GHG": req.body.supplier.current_GHG,
+    sus_rating:Math.floor(Math.random() * 100),
+    fin_rating:Math.floor(Math.random() * 100),
+    sec_rating:Math.floor(Math.random() * 100),
+    sup_rating:Math.floor(Math.random() * 100),
+    bio_rating:Math.floor(Math.random() * 100)
   });
 
   a.save((err,a)=>{
@@ -131,7 +136,12 @@ app.post('/supplier/bulk',(req,res)=>{
       "traceability": s.traceability,
       "ontime_delivery": s.ontime_delivery,
       "updated_document": s.updated_document,
-      "current_GHG": s.current_GHG
+      "current_GHG": s.current_GHG,
+      sus_rating:Math.floor(Math.random() * 100),
+      fin_rating:Math.floor(Math.random() * 100),
+      sec_rating:Math.floor(Math.random() * 100),
+      sup_rating:Math.floor(Math.random() * 100),
+      bio_rating:Math.floor(Math.random() * 100)
     })
   });
   console.log(suppliers);

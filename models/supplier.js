@@ -18,14 +18,19 @@ const supplierSchema = mongoose.Schema({
    "stakeholder_engagement": {type:Number},
    "social_resp": {type:Number},
    "environment": {type:Number},
-   "GHG": {type:String},
+   "GHG": {type:Number},
    "expired_certification_no": {type:Number},
    "rank": {type:Number},
    "quality_rate": {type:Number},
    "Traceability": {type:Number},
    "ontime_delivery": {type:Number},
    "updated_document": {type:Number},
-   "current_GHG": {type:String}
+   "current_GHG": {type:Number},
+   sus_rating:{type:Number},
+   fin_rating:{type:Number},
+   sec_rating:{type:Number},
+   sup_rating:{type:Number},
+   bio_rating:{type:Number}
 })
 
 
